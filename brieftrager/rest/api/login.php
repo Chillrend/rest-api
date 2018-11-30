@@ -9,10 +9,10 @@
 $response = array();
  
 // include db connect class
-require_once __DIR__ . '/../db-config.php';
- 
-// connecting to db
-$con = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE) or die(mysqli_error());
+    require_once __DIR__ . '/../db-config.php';
+
+    // connecting to db
+    $con = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE) or die(mysqli_error());
  
 // check for post url param
 //!empty($_POST['username']) && !empty($_POST['password'])
@@ -52,7 +52,7 @@ if (!empty($_GET['username']) && !empty($_GET['password'])) {
         } else {
             // no product found
             $response["success"] = 0;
-            $response["message"] = "No product found";
+            $response["message"] = "No User found";
  
             // echo no users JSON
             echo json_encode($response);
@@ -60,7 +60,7 @@ if (!empty($_GET['username']) && !empty($_GET['password'])) {
     } else {
         // no product found
         $response["success"] = 0;
-        $response["message"] = "No product found";
+        $response["message"] = "No User found";
  
         // echo no users JSON
         echo json_encode($response);
