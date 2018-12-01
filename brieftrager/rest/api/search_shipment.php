@@ -190,7 +190,7 @@ if (!empty($_GET['awb'])) {
 } else {
     // required field is missing
     $response["success"] = 0;
-    $response["message"] = "Field is Missing!";
+    $response["message"] = "GET DATA IS MISSING!";
  
     // echoing JSON response
     echo json_encode($response);
