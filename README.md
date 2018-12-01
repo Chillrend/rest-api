@@ -1,5 +1,5 @@
 # rest-api
-# RESTful WebService for Brieftrager Project
+# RESTful WebService for Brieftrager College Project
 # put into htdocs folder of your xampp
 
 # set IP into :
